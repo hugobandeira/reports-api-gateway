@@ -15,9 +15,6 @@ services:
     networks:
       - app-network
     environment:
-      SECURITY_HEALTHCHECK: eCqYQmhZvSzTD:eaAPFGMMZM/Hh:Ke
-      USER_HEALTHCHECK: AUnz3wiv
-      PASSWORD_HEALTHCHECK: zvj5s66BxVd48piAL5RfyXzki0s3qZ9f
     dns:
       - 8.8.8.8
 
@@ -33,8 +30,8 @@ services:
     environment:
       MYSQL_DATABASE: reports-api-gateway
       MYSQL_USER: reports-api-gateway
-      MYSQL_PASSWORD: ymC.xPdx
-      MYSQL_ROOT_PASSWORD: ymC.xPdx
+      MYSQL_PASSWORD: Bv4erDx6YR65
+      MYSQL_ROOT_PASSWORD: Bv4erDx6YR65
     networks:
       - app-network
 
