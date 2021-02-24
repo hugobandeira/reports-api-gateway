@@ -5,7 +5,6 @@ build:
 
 setup:
 	sudo chown root:root .docker/cron
-	docker network create docker-whmcs_app_net;
 
 up:
 	date && pwd && whoami && git pull origin master
