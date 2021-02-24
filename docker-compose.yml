@@ -9,12 +9,8 @@ services:
     depends_on:
       - reports-api-gateway-app-mysql
       - reports-api-gateway-app-redis
-      - reports-api-gateway-app-mysql-test
     networks:
       - app-network1
-    extra_hosts:
-      - "whmcs.brasil:10.0.3.15"
-      - "whmcs.latam.mx:10.0.3.50"
     environment:
       SECURITY_HEALTHCHECK: eCqYQmhZvSzTD:eaAPFGMMZM/Hh:Ke
       USER_HEALTHCHECK: AUnz3wiv
