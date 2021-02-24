@@ -1,7 +1,10 @@
 version: '3'
 services:
   reports-api-gateway-app:
-    build: .
+    build:
+      context: .
+      args:
+        UID: "${userid}"
     container_name: reports-api-gateway-app
     volumes:
       - ./:/var/www

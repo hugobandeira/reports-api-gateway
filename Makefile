@@ -1,3 +1,8 @@
+USERID=$(shell id -u)
+
+build:
+	userid=${USERID} docker-compose build
+
 setup:
 	sudo chown root:root .docker/cron
 	docker network create docker-whmcs_app_net;

@@ -4,6 +4,9 @@ RUN apk add --no-cache shadow openssl bash mysql-client nginx nano
 #RUN apk add --no-cache shadow openssl bash mysql-client alpine-sdk autoconf nano nginx openrc
 #RUN apk add --no-cache shadow openssl bash mysql-client alpine-sdk autoconf nano nginx openrc supervisor sqlite
 
+# Need to add a default value to use it through the command line
+ARG UID='1000'
+
 RUN apk add --no-cache $PHPIZE_DEPS \
     && pecl install xdebug-2.9.6 \
     && docker-php-ext-enable xdebug
@@ -21,12 +24,11 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY .docker/nginx/nginx.conf /etc/nginx/conf.d
 COPY . .
 
-RUN usermod -u 1000 www-data
+RUN usermod -u $UID www-data
 RUN chmod -R 775 /var/www/storage
 RUN chown -R www-data:www-data /var/www/
 
 USER www-data
-
 EXPOSE 80
 
 ENTRYPOINT ["php-fpm"]
