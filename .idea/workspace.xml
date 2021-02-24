@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25706332-37de-40a3-92f2-8815cda0b071" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/nfsegaps-new" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="nfsegaps-new_nfsegapsapp:latest" />
+  <component name="ProjectId" id="1ocSuMlBj8VQHuE4Kr5krzrqJBd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm" value="Docker" />
+    <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="Docker" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.CancelDuplicateNfseTest.testShouldBeCancelDuplicateNfseSuccess">
+    <configuration name="CancelDuplicateNfseTest.testShouldBeCancelDuplicateNfseSuccess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Listeners\CancelDuplicateNfseTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/Listeners/CancelDuplicateNfseTest.php" method="testShouldBeCancelDuplicateNfseSuccess" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateSpedNfseTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Listeners\CreateSpedNfseTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/Listeners/CreateSpedNfseTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateSpedNfseTest.testShouldBeCreateSpedNfseInWhmcsSuccess" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Listeners\CreateSpedNfseTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/Listeners/CreateSpedNfseTest.php" method="testShouldBeCreateSpedNfseInWhmcsSuccess" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateSpedNfseTest.testShouldCreateSpedWithErrorInWhmcsFailed" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Listeners\CreateSpedNfseTest" configuration_file="/opt/project/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/Listeners/CreateSpedNfseTest.php" method="testShouldCreateSpedWithErrorInWhmcsFailed" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="nfsegaps-new_nfsegapsapp:latest" />
+        </PhpTestInterpreterSettings>
+        <envs>
+          <env name="APP_ENV" value="testing " />
+        </envs>
+      </CommandLine>
+      <TestRunner configuration_file="/opt/project/phpunit.xml" scope="XML" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHPUnit.phpunit.xml" />
+      <item itemvalue="PHPUnit.CreateSpedNfseTest" />
+      <item itemvalue="PHPUnit.CreateSpedNfseTest.testShouldBeCreateSpedNfseInWhmcsSuccess" />
+      <item itemvalue="PHPUnit.CreateSpedNfseTest.testShouldCreateSpedWithErrorInWhmcsFailed" />
+      <item itemvalue="PHPUnit.CancelDuplicateNfseTest.testShouldBeCancelDuplicateNfseSuccess" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.CancelDuplicateNfseTest.testShouldBeCancelDuplicateNfseSuccess" />
+        <item itemvalue="PHPUnit.CreateSpedNfseTest.testShouldCreateSpedWithErrorInWhmcsFailed" />
+        <item itemvalue="PHPUnit.CreateSpedNfseTest.testShouldBeCreateSpedNfseInWhmcsSuccess" />
+        <item itemvalue="PHPUnit.CreateSpedNfseTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25706332-37de-40a3-92f2-8815cda0b071" name="Default Changelist" comment="" />
+      <created>1613584606338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613584606338</updated>
+      <workItem from="1613584608877" duration="2329000" />
+      <workItem from="1613593116450" duration="1916000" />
+      <workItem from="1613649476231" duration="29159000" />
+      <workItem from="1613755854775" duration="9000" />
+      <workItem from="1613995575252" duration="12000" />
+      <workItem from="1614002015779" duration="4000" />
+      <workItem from="1614124849039" duration="2898000" />
+    </task>
+    <task id="LOCAL-00001" summary="fix import">
+      <created>1613742604867</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613742604867</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix import">
+      <created>1613743237212</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613743237212</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add validation when exist row">
+      <created>1613743676808</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613743676808</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix delimit days">
+      <created>1613744151797</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613744151797</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add update or create">
+      <created>1613744238618</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613744238618</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add retry failed event">
+      <created>1613744316663</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1613744316663</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix import">
+      <created>1613744364576</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1613744364576</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix query all only a row">
+      <created>1613745426748</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613745426748</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix testing">
+      <created>1613746866065</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1613746866065</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add php doc">
+      <created>1613747213353</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613747213353</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add php doc">
+      <created>1613747279674</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1613747279674</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix testing">
+      <created>1613747309602</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1613747309602</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix merge">
+      <created>1613747808486</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613747808486</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add validation when exist row" />
+    <MESSAGE value="fix delimit days" />
+    <MESSAGE value="add update or create" />
+    <MESSAGE value="add retry failed event" />
+    <MESSAGE value="fix import" />
+    <MESSAGE value="fix query all only a row" />
+    <MESSAGE value="add php doc" />
+    <MESSAGE value="fix testing" />
+    <MESSAGE value="fix merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix merge" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/tests/Unit/Listeners/CancelDuplicateNfseTest.php</url>
+          <line>22</line>
+          <properties>
+            <option name="className" value="\Tests\Unit\Listeners\CancelDuplicateNfseTest" />
+            <option name="methodName" value="testShouldBeCancelDuplicateNfseSuccess" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

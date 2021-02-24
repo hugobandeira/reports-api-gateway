@@ -1,0 +1,68 @@
+version: '3'
+services:
+  reports-api-gateway-app:
+    build: .
+    container_name: reports-api-gateway-app
+    volumes:
+      - ./:/var/www
+      - ./.docker/cron:/etc/crontabs/root
+    depends_on:
+      - reports-api-gateway-app-mysql
+      - reports-api-gateway-app-redis
+      - reports-api-gateway-app-mysql-test
+    networks:
+      - app-network1
+    extra_hosts:
+      - "whmcs.brasil:10.0.3.15"
+      - "whmcs.latam.mx:10.0.3.50"
+    environment:
+      SECURITY_HEALTHCHECK: eCqYQmhZvSzTD:eaAPFGMMZM/Hh:Ke
+      USER_HEALTHCHECK: AUnz3wiv
+      PASSWORD_HEALTHCHECK: zvj5s66BxVd48piAL5RfyXzki0s3qZ9f
+    dns:
+      - 8.8.8.8
+
+  reports-api-gateway-app-mysql:
+    build: ./.docker/mysql
+    command: --innodb-use-native-aio=0
+    container_name: reports-api-gateway-db
+    restart: always
+    ports:
+      - "127.0.0.1:3309:3306"
+    volumes:
+      - ./.docker/dbdata:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: reports-api-gateway
+      MYSQL_USER: reports-api-gateway
+      MYSQL_PASSWORD: ymC.xPdx
+      MYSQL_ROOT_PASSWORD: ymC.xPdx
+    networks:
+      - app-network1
+
+  reports-api-gateway-app-redis:
+    image: redis:alpine
+    container_name: reports-api-gateway-redis
+    command: redis-server --requirepass root
+    volumes:
+      - ./.docker/rddata:/data
+    ports:
+      - "127.0.0.1:6380:6579"
+    networks:
+      - app-network1
+
+  reports-api-gateway-app-nginx:
+    build: ./.docker/nginx
+    restart: always
+    ports:
+      - "127.0.0.1:9000:80"
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - reports-api-gateway-app
+    networks:
+      - app-network1
+
+networks:
+  app-network1:
+    external:
+      name: docker-whmcs_app_net
