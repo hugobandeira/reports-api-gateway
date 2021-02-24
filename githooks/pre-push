@@ -4,7 +4,7 @@ red=$(tput bold && tput setaf 1)
 green=$(tput bold && tput setaf 2)
 blue=$(tput bold && tput setaf 4)
 
-printf "${blue}--------Run Unit Tests-------${reset}"
+printf "\n${blue}--------Run Unit Tests-------\n${reset}"
 if make test ; then
     echo "${green}Unit test has succeeded${reset}"
 else
