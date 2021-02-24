@@ -10,7 +10,7 @@ services:
       - reports-api-gateway-app-mysql
       - reports-api-gateway-app-redis
     networks:
-      - app-network1
+      - app-network
     environment:
       SECURITY_HEALTHCHECK: eCqYQmhZvSzTD:eaAPFGMMZM/Hh:Ke
       USER_HEALTHCHECK: AUnz3wiv
@@ -33,7 +33,7 @@ services:
       MYSQL_PASSWORD: ymC.xPdx
       MYSQL_ROOT_PASSWORD: ymC.xPdx
     networks:
-      - app-network1
+      - app-network
 
   reports-api-gateway-app-redis:
     image: redis:alpine
@@ -44,7 +44,7 @@ services:
     ports:
       - "127.0.0.1:6380:6579"
     networks:
-      - app-network1
+      - app-network
 
   reports-api-gateway-app-nginx:
     build: ./.docker/nginx
@@ -56,9 +56,8 @@ services:
     depends_on:
       - reports-api-gateway-app
     networks:
-      - app-network1
+      - app-network
 
 networks:
-  app-network1:
-    external:
-      name: docker-whmcs_app_net
+  app-network:
+    driver: bridge
