@@ -1,6 +1,7 @@
 FROM php:7.4-fpm-alpine
-RUN apk add --no-cache shadow openssl bash mysql-client alpine-sdk autoconf nano nginx openrc
+RUN apk add --no-cache shadow openssl bash mysql-client nginx nano
 #COPY .docker/supervisord.conf /etc/supervisord.conf
+#RUN apk add --no-cache shadow openssl bash mysql-client alpine-sdk autoconf nano nginx openrc
 #RUN apk add --no-cache shadow openssl bash mysql-client alpine-sdk autoconf nano nginx openrc supervisor sqlite
 
 RUN apk add --no-cache $PHPIZE_DEPS \
@@ -23,6 +24,8 @@ COPY . .
 RUN usermod -u 1000 www-data
 RUN chmod -R 775 /var/www/storage
 RUN chown -R www-data:www-data /var/www/
+
+USER www-data
 
 EXPOSE 80
 
