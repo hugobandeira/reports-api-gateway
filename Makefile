@@ -7,9 +7,9 @@ setup:
 	sudo chown root:root .docker/cron
 
 up:
-	date && pwd && whoami && git pull origin master
-	sudo docker-compose up -d
-	docker exec reports-api-gateway-app composer install
+#	date && pwd && whoami && git pull origin master
+# 	docker exec reports-api-gateway-app composer install
+	userid=${USERID} docker-compose up -d
 
 test:
 	docker exec reports-api-gateway-app php artisan optimize:clear --env=testing
