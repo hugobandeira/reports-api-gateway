@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Services\LogTools\Interfaces\LogToolsInterface;
+use App\Services\LogTools\LogTools;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -29,6 +30,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->bind(LogToolsInterface::class, LogToolsInterface::class);
+        $this->app->bind(LogToolsInterface::class, LogTools::class);
     }
 }
